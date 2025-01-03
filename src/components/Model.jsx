@@ -1,30 +1,45 @@
 import React, { useEffect, useState, useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
+import { forwardRef } from "react";
 
-export function Model(props) {
+gsap.registerPlugin(ScrollTrigger);
+
+//we forward the ref cuz we dont have the <mesh> in the hero component to control 3D position
+export const Model = forwardRef((props, ref) => {
   const { nodes, materials } = useGLTF("/models/pepper-soda.glb");
-  const [size, setSize] = useState(window.innerWidth < 1000 ? 70 : 90);
+  const [size, setSize] = useState(window.innerWidth < 1000 ? 95 : 110);
 
-  function handleResize() {
-    if (window.innerWidth < 1000) setSize(70);
-    else setSize(90);
-  }
   const meshRef = useRef();
+
   useEffect(() => {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+
   useFrame(() => {
     if (meshRef.current) {
-      meshRef.current.rotation.y += 0.01;
+      meshRef.current.rotation.z += 0.01;
     }
   });
+
+  function handleResize() {
+    if (window.innerWidth < 1000) setSize(95);
+    else setSize(110);
+  }
+
   return (
-    <group {...props} position={[0, -1.5, 0]} dispose={null} ref={meshRef}>
+    <group {...props} position={[0, -2.6, 0]} dispose={null}>
       <group rotation={[-Math.PI / 2, 0, -1.177]}>
         <group rotation={[Math.PI / 2, 0, 0]} scale={0.01}>
           <mesh
+            ref={(el) => {
+              meshRef.current = el; // Internal ref for rotation
+              if (ref) ref.current = el; // Forwarded ref for external control
+            }} //did this for both controls
             castShadow
             receiveShadow
             geometry={nodes.DrPepper__Material_0.geometry}
@@ -36,6 +51,6 @@ export function Model(props) {
       </group>
     </group>
   );
-}
+});
 
 useGLTF.preload("/models/pepper-soda.glb");
