@@ -52,12 +52,12 @@ const Hero = () => {
     }
     if (canvasWrapperRef.current) {
       tl.to(canvasWrapperRef.current, {
-        y: window.innerWidth < 1000 ? "77vh" : "96vh", // Move up to center the next section
+        y: window.innerWidth < 1000 ? "77vh" : "96vh",
         x: window.innerWidth < 1000 ? "-25vw" : "-27vw",
         scrollTrigger: {
-          trigger: "#hero", // Class or ID of the next section
+          trigger: "#hero",
           start: "top top",
-          end: "80% top", //bottom of hero with center of view port
+          end: "80% top", //80% of hero with top of view port
           scrub: true,
         },
         ease: "power1.inOut",
@@ -81,7 +81,6 @@ const Hero = () => {
     }
   }, []);
 
-  useGSAP(() => {}, []);
   return (
     <>
       <section
@@ -124,7 +123,7 @@ const Hero = () => {
           </div>
         </div>
       </section>
-      <section className="h-[85dvh] bg-secondary">
+      <section className="h-[90dvh] bg-secondary">
         <div className="flex flex-col items-center">
           <h1
             id="original-h1"

@@ -1,12 +1,8 @@
 import React, { useEffect, useState, useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/all";
-import { forwardRef } from "react";
 
-gsap.registerPlugin(ScrollTrigger);
+import { forwardRef } from "react";
 
 //we forward the ref cuz we dont have the <mesh> in the hero component to control 3D position
 export const Model = forwardRef((props, ref) => {
