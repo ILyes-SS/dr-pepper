@@ -39,7 +39,10 @@ const Flavors = () => {
   }, []);
 
   return (
-    <section className="bg-secondary py-[20px] w-[100dvw] flex flex-col align items-center gap-5">
+    <section
+      id="flavors-section"
+      className="bg-secondary py-[20px] w-[100dvw] flex flex-col align items-center gap-5"
+    >
       <h1
         id="flavors-title"
         className="font-bold font-heading text-primary text-4xl xl:text-6xl max-[375px]:text-3xl"

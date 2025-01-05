@@ -123,7 +123,7 @@ const Hero = () => {
           </div>
         </div>
       </section>
-      <section className="h-[90dvh] bg-secondary">
+      <section className="h-[85dvh] bg-secondary">
         <div className="flex flex-col items-center">
           <h1
             id="original-h1"

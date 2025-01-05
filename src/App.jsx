@@ -1,6 +1,7 @@
 import Flavors from "./components/Flavors";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
+import VidSection from "./components/VidSection";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Header />
       <Hero />
       <Flavors />
+      <VidSection />
     </>
   );
 }
