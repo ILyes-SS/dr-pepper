@@ -57,7 +57,7 @@ const Flavors = () => {
               key={flavor.label}
             >
               <img
-                className="w-[35dvw]"
+                className="w-[30dvw]"
                 src={flavor.src}
                 alt="dr pepper flavor"
               />

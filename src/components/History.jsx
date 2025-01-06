@@ -23,7 +23,7 @@ const History = () => {
     });
   }, []);
   return (
-    <section className="bg-primary w-screen h-screen py-5 flex flex-col items-center xl:flex-row xl:px-4">
+    <section className="bg-primary relative w-screen h-[130dvh] py-5 flex flex-col items-center xl:flex-row xl:px-4">
       <div
         id="history"
         className="bg-secondary rounded-lg w-10/12 p-10 relative top-10 xl:py-14 xl:left-6 "
@@ -39,7 +39,7 @@ const History = () => {
         </p>
       </div>
       <img
-        className="w-full xl:w-8/12"
+        className="w-full xl:w-8/12 h-auto max-h-[65vh] object-cover"
         src="../../public/images/image.png"
         alt="black and white image of a dr pepper factory"
       />
