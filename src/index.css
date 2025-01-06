@@ -11,6 +11,8 @@ body {
   width: 100dvw;
   overflow-x: hidden;
 }
+
+
 @layer base {
   @font-face {
     font-family: "Bebas Neue";

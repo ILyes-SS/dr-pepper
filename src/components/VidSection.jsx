@@ -18,7 +18,7 @@ const VidSection = () => {
     });
   }, []);
   return (
-    <section className=" flex flex-col justify-center items-center h-[100dvh] w-[100dvw] py-15 px-5 bg-secondary">
+    <section className=" flex flex-col justify-center items-center h-[100dvh] w-[100dvw] py-15 px-5 bg-primary">
       <div className="w-11/12">
         <iframe
           className="w-full"
@@ -30,7 +30,7 @@ const VidSection = () => {
           referrerpolicy="strict-origin-when-cross-origin"
           allowfullscreen
         ></iframe>
-        <div className="flex font-body mt-3 xl:text-xl w-full ">
+        <div className="flex font-body mt-3 xl:text-xl w-full text-secondary">
           <p className="vid-para">No company can beat Dr pepper</p>
           <p className="vid-para ml-auto">
             The best drink for the best audience
