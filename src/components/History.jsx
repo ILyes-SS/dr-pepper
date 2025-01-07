@@ -40,7 +40,7 @@ const History = () => {
       </div>
       <img
         className="w-full xl:w-8/12 h-auto max-h-[65vh] object-cover"
-        src="../../public/images/image.png"
+        src="/images/image.png"
         alt="black and white image of a dr pepper factory"
       />
     </section>

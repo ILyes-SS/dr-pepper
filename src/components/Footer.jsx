@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="original font-body mt-1 xl:text-xl xl:my-2">
           <img
             className="h-[50px]"
-            src="../../public/images/dr-pepper-new-logo-removebg-preview.png"
+            src="/images/dr-pepper-new-logo-removebg-preview.png"
             alt="Dr pepper logo"
           />
           <div className="mt-2">
@@ -20,22 +20,10 @@ const Footer = () => {
             <p className="underline">benmaltiiilyes@gmail.com</p>
           </div>
           <div className="mt-2 flex gap-3">
-            <img
-              className="h-7"
-              src="../../public/icons/fb.png"
-              alt="facebook logo"
-            />
-            <img
-              className="h-7"
-              src="../../public/icons/insta.png"
-              alt="instagram logo"
-            />
-            <img
-              className="h-7"
-              src="../../public/icons/li.png"
-              alt="linkedin logo"
-            />
-            <img className="h-7" src="../../public/icons/x.png" alt="X logo" />
+            <img className="h-7" src="/icons/fb.png" alt="facebook logo" />
+            <img className="h-7" src="/icons/insta.png" alt="instagram logo" />
+            <img className="h-7" src="/icons/li.png" alt="linkedin logo" />
+            <img className="h-7" src="/icons/x.png" alt="X logo" />
           </div>
         </div>
         <div className="min-[450px]:ml-auto max-[450px]:mt-2">

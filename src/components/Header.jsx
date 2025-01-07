@@ -5,7 +5,7 @@ const Header = () => {
     <header className="bg-secondary py-3">
       <img
         className="mx-auto h-14"
-        src="../../public/images/dr-pepper-new-logo-removebg-preview.png"
+        src="/images/dr-pepper-new-logo-removebg-preview.png"
         alt=""
       />
     </header>
