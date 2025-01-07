@@ -45,23 +45,23 @@ const Flavors = () => {
     >
       <h1
         id="flavors-title"
-        className="font-bold font-heading text-primary text-4xl xl:text-6xl max-[375px]:text-3xl"
+        className="max-[340px]:px-7 font-bold font-heading text-primary text-4xl xl:text-6xl max-[375px]:text-3xl"
       >
         Discover the different flavors
       </h1>
-      <div className="grid grid-cols-2 grid-items-center gap-6">
+      <div className="grid grid-cols-2 grid-items-center  gap-6">
         {flavors.map((flavor) => {
           return (
             <div
-              className="group flavor bg-accent rounded-md "
+              className="flex flex-col items-center group flavor bg-accent rounded-md "
               key={flavor.label}
             >
               <img
-                className="w-[30dvw]"
+                className="w-[30dvw] max-[410px]:w-[25dvw]"
                 src={flavor.src}
                 alt="dr pepper flavor"
               />
-              <p className="bg-primary transition-opacity duration-700 group-hover:opacity-100 opacity-0 -mt-2 text-secondary text-center font-bold text-2xl font-heading xl:text-4xl xl:my-2">
+              <p className="self-stretch bg-primary transition-opacity duration-700 group-hover:opacity-100 opacity-0 -mt-2 text-secondary text-center font-bold text-xl md:text-2xl font-heading xl:text-4xl xl:my-2">
                 {flavor.label}
               </p>
             </div>
