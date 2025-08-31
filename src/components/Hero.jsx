@@ -85,17 +85,20 @@ const Hero = () => {
     <>
       <section
         id="hero"
-        className="bg-secondary h-[calc(100dvh-80px)] w-[100dvw]"
+        className="bg-secondary relative flex justify-center h-[calc(100dvh-80px)] w-[100dvw]"
       >
-        <div className="px-9 md:px-14 flex gap-5 h-full items-center">
-          <div className=" flex-1 -mt-10 max-[400px]:flex-2 ">
+        <div className="px-9 md:px-14 max-w-[1200px] flex gap-5 h-full items-center">
+          <div className="z-10 flex-1 -mt-10 max-[400px]:flex-2 ">
             <h1
               id="hero-heading"
-              className="font-bold font-heading text-primary text-4xl xl:text-6xl max-[375px]:text-3xl"
+              className="font-bold mix-blend-difference font-heading text-primary text-3xl xl:text-6xl max-[375px]:text-2xl"
             >
-              Discover the Unique <br /> Taste of Dr Pepper
+              Discover the Unique Taste of Dr Pepper
             </h1>
-            <p id="hero-para" className="font-body mt-1 xl:text-xl xl:my-2">
+            <p
+              id="hero-para"
+              className="font-body mix-blend-difference mt-1 xl:text-xl xl:my-2"
+            >
               Welcome to Dr Pepper, where every sip is an adventure!{" "}
             </p>
             <button
@@ -105,8 +108,11 @@ const Hero = () => {
               Products
             </button>
           </div>
-          <div ref={canvasWrapperRef} className="h-[60dvh] w-[33dvw]">
-            <Canvas>
+          <div
+            ref={canvasWrapperRef}
+            className="h-[400px] max-w-full z-5  max-[550px]:absolute flex-1"
+          >
+            <Canvas className="w-full ">
               <directionalLight
                 position={[1, 1, 1]}
                 intensity={1000}
@@ -127,7 +133,7 @@ const Hero = () => {
         <div className="flex flex-col items-center">
           <h1
             id="original-h1"
-            className="original font-bold font-heading text-primary text-4xl xl:text-6xl max-[375px]:text-3xl opacity-0 -translate-y-9"
+            className="original text-center font-bold font-heading text-primary text-4xl xl:text-6xl max-[375px]:text-3xl opacity-0 -translate-y-9"
           >
             "Dr Pepper: Always Original."
           </h1>

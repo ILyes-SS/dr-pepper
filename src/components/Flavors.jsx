@@ -41,11 +41,11 @@ const Flavors = () => {
   return (
     <section
       id="flavors-section"
-      className="bg-secondary py-[20px] w-[100dvw] flex flex-col align items-center gap-5"
+      className="bg-secondary pt-15 py-[20px] w-[100dvw] flex flex-col align items-center gap-5"
     >
       <h1
         id="flavors-title"
-        className="max-[340px]:px-7 font-bold font-heading text-primary text-4xl xl:text-6xl max-[375px]:text-3xl"
+        className="max-[340px]:px-7 text-center font-bold font-heading text-primary text-4xl xl:text-6xl max-[375px]:text-3xl"
       >
         Discover the different flavors
       </h1>
@@ -57,7 +57,7 @@ const Flavors = () => {
               key={flavor.label}
             >
               <img
-                className="w-[30dvw] max-[410px]:w-[25dvw]"
+                className="w-[30dvw] min-w-[] max-[410px]:w-[40dvw]"
                 src={flavor.src}
                 alt="dr pepper flavor"
               />

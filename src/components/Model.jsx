@@ -7,7 +7,7 @@ import { forwardRef } from "react";
 //we forward the ref cuz we dont have the <mesh> in the hero component to control 3D position
 export const Model = forwardRef((props, ref) => {
   const { nodes, materials } = useGLTF("/models/pepper-soda.glb");
-  const [size, setSize] = useState(window.innerWidth < 1000 ? 95 : 110);
+  const [size, setSize] = useState(window.innerWidth < 1000 ? 80 : 110);
 
   const meshRef = useRef();
 

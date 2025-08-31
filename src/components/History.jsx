@@ -23,12 +23,12 @@ const History = () => {
     });
   }, []);
   return (
-    <section className="bg-primary relative w-screen h-[130dvh] py-5 flex flex-col items-center xl:flex-row xl:px-4">
+    <section className="bg-primary min-h-[700px] relative w-screen  py-5 flex flex-col items-center xl:flex-row xl:px-4">
       <div
         id="history"
         className="bg-secondary rounded-lg w-10/12 p-10 relative top-10 xl:py-14 xl:left-6 "
       >
-        <h1 className="history font-bold font-heading text-primary text-4xl xl:text-6xl max-[375px]:text-3xl">
+        <h1 className="history font-bold font-heading text-primary text-4xl xl:text-6xl max-[375px]:text-2xl">
           The Timeless Tale of Dr Pepper
         </h1>
         <p className=" original font-body mt-1 xl:text-xl xl:my-2">
@@ -39,7 +39,7 @@ const History = () => {
         </p>
       </div>
       <img
-        className="w-full xl:w-8/12 h-auto max-h-[65vh] object-cover"
+        className="w-full max-w-[800px] xl:w-8/12 h-auto  object-cover"
         src="/images/image.png"
         alt="black and white image of a dr pepper factory"
       />

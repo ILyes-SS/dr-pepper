@@ -12,7 +12,7 @@ const Footer = () => {
           />
           <div className="mt-2">
             <h1 className="font-bold">Address:</h1>
-            <p>Mostaganem, Algeria</p>
+            <p>Algeria</p>
           </div>
           <div className="mt-2">
             <h1 className="font-bold">Contact:</h1>
